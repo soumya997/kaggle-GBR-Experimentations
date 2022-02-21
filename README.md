@@ -1,3 +1,13 @@
+# Introduction:
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 # NB tracking
 
 |training NB|Inference NB|
