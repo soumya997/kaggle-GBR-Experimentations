@@ -1,12 +1,32 @@
-# Introduction:
+<p align="center">
+<img src="https://i.imgur.com/7Nr5W5V.png">
+</p>
 
+
+# Introduction: 
+The goal of this competition is to accurately identify starfish in real-time by building an object detection model trained on underwater videos of coral reefs.
+Me and my teammate started early and contributed with few Notebook and discussion threads, but as the deadline for the overlapping competition `Sartorius -CIS` was approaching 
+we had to shift our focus toward that. We got started with the competiion after the 31st Dec. It took some time to digest all the things that were happening, [im still reading the solutions, and some code 😅.]. This was a very successful competition [also sartorius], total of 2,026 teams and 61,174 submissions. People shared there ideas and code massively, because of that it was a great start for a beginner like me, because I got to learn a lot of things. Here I will be discussing about my experiments. I created a lot of NBs in this competition, and from that I tried to compile most of the NBs that are important. Here you will find some forked NBs(with modification) and some independent NBs. If I missed something please create an issue and ask there.
+
+## Few Ideas That I tried:
+- Most of the ideas were proposed on the Discussion forums
+### Use Single yolov5:
+- When I got to yolov5 it was clear that yolov5 is FTW. But there were conflits on which version to use yolov5s6 or yolov5m6. Because some were getting better results on one of them. 
+    -  **I started with yolov5s6** It was a video based splitting. As per my analysis it was most likely that video_id2 would give more better f2, because it has more data, and there were varience in the data. I tried different hyper parameters in that, and different training image resolutions. I tried doing ensemble after training each fold.   
 ```mermaid
   graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+      A(Competition Data)--> B(video split vid_0);
+      A(Competition Data)--> C(video split vid_1);
+      A(Competition Data)--> D(video split vid_2);
+      B(video split vid_0)-->E(yolov5s6 w/ imgsize-3584);
+      C(video split vid_1)-->E(yolov5s6 w/ imgsize-3584);
+      D(video split vid_2)-->E(yolov5s6 w/ imgsize-3584);
+      E(yolov5s6 w/ imgsize-3584)--conf:0.30, thr:0.50, img:6400--> F(WBF);
+      F(WBF)-->G(Bboxes And Conf);
 ```
+
+
+
 
 # NB tracking
 
@@ -66,7 +86,10 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
  -->
 **Inference NB:** https://www.kaggle.com/soumya9977/learning-to-torch-fasterrcnn-infer
 
-##### Exp log:
+<details open>
+<summary>Experiment log FasterRCNN:</summary>
+<p>
+
 
 | Version | model      |  file used                      | link  | CV/LB        |
 | ------- | ---------- |  ------------------------------ | ----- | ------------ |
@@ -77,6 +100,14 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 | v11     | fasterRCNN | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.457/0.291  |%%
 
 ---
+
+  
+</p>
+</details>
+
+<details open>
+<summary>Experiment log FasterRCNN:</summary>
+<p>
 
 | Version | model                                                                                             | file used                      | link                                                                                         | CV/LB                            |
 | ------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -95,10 +126,13 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 | v24     | fasterRCNN resnet50,90/10,e16,bs8,AdamW,**cnf0.1**,i480,color aug **[save_multy: future_resume]** | fasterrcnn_resnet50_fpn-e7.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-train-coloraug-480p-sgd-adamw-90-10-e20) | 0.382/?                          |
 |         |                                                                                                   |                                |                                                                                              |                                  |
 |         |                                                                                                   |                                |                                                                                              |                                  |
-
-
 ---
+</p>
+</details>
 
+<details open>
+<summary>Experiment log YOLOV5:</summary>
+<p>
 
 ## 2. YOLOV5 table:
 | version                                                                                               | config                                                                                                                                 | iou & conf | img_size[train/test] | epoch used | CV/LB      |
@@ -113,8 +147,13 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 | [starfish-v13](https://www.kaggle.com/soumya9977/starfish-v3?scriptVersionId=87078723)                | <mark style="background: #ABF7F7A6;">[tracking,tta]</mark> 1/5 fold,<mark style="background: #FFB86CA6;">yolov5s5</mark> ,3000,e11,bs2 | 0.4,0.28   | 1920 x 3             | best.pt    | 0.76/0.588 |
 | [starfish-v12](https://www.kaggle.com/soumya9977/starfish-v3?scriptVersionId=87078723)                | <mark style="background: #ABF7F7A6;">[tracking,tta]</mark> 1/5 fold,<mark style="background: #FFB86CA6;">yolov5s5</mark> ,3000,e11,bs2 | 0.4,0.15   | 1920 x 3             | best.pt    | 0.76/0.580 |
 | [starfish-v07](https://www.kaggle.com/shivamaranya/yolov5-albumentations-train)|<mark style="background: #ABF7F7A6;">[tracking,tta]</mark> 1/5 fold,<mark style="background: #FFB86CA6;">yolov5s5</mark> ,3000,e11,bs2 | 0.4,0.28   | 1920 x 3 | best.pt    | 0.76/0.588                                                                                                                                         |            |                      |            |            |
-
 ---
+</p>
+</details>
+
+<details open>
+<summary>Experiment log YOLOV5:</summary>
+<p>
 
 # Model cofig Log:
 
@@ -139,7 +178,10 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 |v35|yolov5s6 3584img, video_fold vid2, copypaste:0.5, e10| epoch7.pt|0.88/0.625[p]|
 |v36|yolov5m6 resume training, 3584img, video_fold vid2, e11| epoch9.pt|0.88/0.623[p]|
 
+</p>
+</details>
 
+  
 ## 3. YOLOV5m6 experiments:
 yolov5m6try1-epoch5 = 0.600
 yolov5m6try1-epoch3 = 0.562
