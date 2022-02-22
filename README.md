@@ -19,7 +19,7 @@ we had to shift our focus toward that. We got started with the competiion after 
    -  After seeing some discussion on yolov5 model freesing, I thought of trying that, and for this best splitting was sequence based groupfold. for more check out [ultralytics docs](https://docs.ultralytics.com/tutorials/transfer-learning-froze-layers/). I trained both yolov5s6 and yolov5m6. image size was +/-3000.
     
    - Along with yolov5, tracking was doing a better job increasing the CV/LB. I also tried that. I used norfair tracking. I saw some discussions on different tracking to use, like deep sort and so, but ended up using the norfair one as it was giving decent results and I did not had much time.
-   - As a postprocessing technique I also tried to use classification on the bounding boxes. It also helped. I tried different models Normal CNN, Densenet121, Resnet [50,101], Efficientnet[B1] and ensemble. Our demo pipeline looks like this,
+   - As a postprocessing technique I also tried to use classification on the bounding boxes. It also helped. I tried different models Normal CNN, Densenet121, Resnet [50,101], Efficientnet[B3] and ensemble. Our demo pipeline looks like this,
    
 ```mermaid
   graph TD;
