@@ -193,9 +193,10 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 <p>
 
 ## 3. YOLOV5m6 experiments:
-yolov5m6try1-epoch5 = 0.600
-yolov5m6try1-epoch3 = 0.562
-yolov5s6-vid_id:0 = 0.555 [yolov5s6]
+   
+- yolov5m6try1-epoch5 = 0.600
+- yolov5m6try1-epoch3 = 0.562
+- yolov5s6-vid_id:0 = 0.555 [yolov5s6]
 
 
 </p>
