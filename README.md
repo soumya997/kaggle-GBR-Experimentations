@@ -205,6 +205,7 @@ yolov5s6-vid_id:0 = 0.555 [yolov5s6]
 - Write a optuna scritp for adjusting the inference hyper-params of yolov5 
 - Add some other NBs and writeups that are left.
 - making the code into python scripts.
+- Add model prediction video
 
 # Random Advice to Myself:
 - dont participate on multiple comps w/ overlapping timings [one at a time]
