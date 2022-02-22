@@ -8,7 +8,7 @@ The goal of this competition is to accurately identify starfish in real-time by 
 Me and my teammate started early and contributed with few Notebook and discussion threads, but as the deadline for the overlapping competition `Sartorius -CIS` was approaching 
 we had to shift our focus toward that. We got started with the competiion after the 31st Dec. It took some time to digest all the things that were happening, [im still reading the solutions, and some code 😅.]. This was a very successful competition [also sartorius], total of 2,026 teams and 61,174 submissions. People shared there ideas and code massively, because of that it was a great start for a beginner like me, because I got to learn a lot of things. With the help of the community our team was able to get in top 3% of the LB and had a silver medal [we were expecting Bronze]. Here I will be discussing about my experiments. I created a lot of NBs in this competition, and from that I tried to compile most of the NBs that are important. Here you will find some forked NBs(with modification) and some independent NBs. If I missed something please create an issue and ask there.
 
-## Few Ideas That I tried:
+## Few Ideas That We tried:
 - Most of the ideas were proposed on the Discussion forums
 ### Use Single yolov5:
 - When I got to yolov5 it was clear that yolov5 is FTW. But there were conflits on which version to use yolov5s6 or yolov5m6. Because some were getting better results on one of them. 
