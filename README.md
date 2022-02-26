@@ -100,11 +100,11 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 
 | Version | model      |  file used                      | link  | CV/LB        |
 | ------- | ---------- |  ------------------------------ | ----- | ------------ |
-| v9      | fasterRCNN | fasterrcnn_resnet50_fpn-e10.pt | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.461/0.285  |
-| v12     | fasterRCNN | fasterrcnn_resnet50_fpn-e9.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.461/~0.285 |
-| v10     | fasterRCNN | fasterrcnn_resnet50_fpn-e11.pt | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.459/0.285  |
-| v13     | fasterRCNN | fasterrcnn_resnet50_fpn-e8.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.460/0.288  |
-| v11     | fasterRCNN | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.457/0.291  |%%
+| v9      | fasterRCNN | fasterrcnn_resnet50_fpn-e10.pt | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.461/0.285  |
+| v12     | fasterRCNN | fasterrcnn_resnet50_fpn-e9.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.461/~0.285 |
+| v10     | fasterRCNN | fasterrcnn_resnet50_fpn-e11.pt | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.459/0.285  |
+| v13     | fasterRCNN | fasterrcnn_resnet50_fpn-e8.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.460/0.288  |
+| v11     | fasterRCNN | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.457/0.291  |%%
 
 ---
 
@@ -118,19 +118,19 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 
 | Version | model                                                                                             | file used                      | link                                                                                         | CV/LB                            |
 | ------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------- | -------------------------------- |
-| v9      | fasterRCNN resnet50,90/10,e12,bs8,SGD,cnf0.15,i480                                                | fasterrcnn_resnet50_fpn-e10.pt | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.461/0.285                      |
-| v12     | fasterRCNN ................... same as above                                                      | fasterrcnn_resnet50_fpn-e9.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.461/~0.285                     |
-| v10     | fasterRCNN ................... same as above                                                      | fasterrcnn_resnet50_fpn-e11.pt | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.459/0.285                      |
-| v13     | fasterRCNN ................... same as above                                                      | fasterrcnn_resnet50_fpn-e8.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.460/0.288                      |
-| v11     | fasterRCNN ................... same as above                                                      | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.457/0.291                      |
-| v16     | fasterRCNN resnet50,90/10,e12,bs8,SGD,cnf0.15,i480,geo aug                                        | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-train-geoaug-480p-sgd-90-10)             | 0.467/0.274                      |
-| v17     | fasterRCNN resnet50,90/10,e20,bs8,SGD,cnf0.15,i480,color aug                                      | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-train-coloraug-480p-sgd-90-10-e20/)      | 0.407/0.382                      |
-| v18     | fasterRCNN resnet50,90/10,e20,bs8,SGD,cnf0.15,i480,color aug                                      | fasterrcnn_resnet50_fpn-e20.pt | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-train-coloraug-480p-sgd-90-10-e20/)      | 0.407/0.291                      |
+| v9      | fasterRCNN resnet50,90/10,e12,bs8,SGD,cnf0.15,i480                                                | fasterrcnn_resnet50_fpn-e10.pt | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.461/0.285                      |
+| v12     | fasterRCNN ................... same as above                                                      | fasterrcnn_resnet50_fpn-e9.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.461/~0.285                     |
+| v10     | fasterRCNN ................... same as above                                                      | fasterrcnn_resnet50_fpn-e11.pt | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.459/0.285                      |
+| v13     | fasterRCNN ................... same as above                                                      | fasterrcnn_resnet50_fpn-e8.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.460/0.288                      |
+| v11     | fasterRCNN ................... same as above                                                      | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-25-i480) | 0.457/0.291                      |
+| v16     | fasterRCNN resnet50,90/10,e12,bs8,SGD,cnf0.15,i480,geo aug                                        | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-train-geoaug-480p-sgd-90-10)             | 0.467/0.274                      |
+| v17     | fasterRCNN resnet50,90/10,e20,bs8,SGD,cnf0.15,i480,color aug                                      | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-train-coloraug-480p-sgd-90-10-e20/)      | 0.407/0.382                      |
+| v18     | fasterRCNN resnet50,90/10,e20,bs8,SGD,cnf0.15,i480,color aug                                      | fasterrcnn_resnet50_fpn-e20.pt | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-train-coloraug-480p-sgd-90-10-e20/)      | 0.407/0.291                      |
 | v20     | FasterRCNN[train]-color+geo aug-480p-SGD-90:10-e20,multi conf,new train loop,bs8                  | fasterrcnn_resnet50_fpn-e11.pt | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-train-color-geo-aug-480p-sgd-90-10-e20)    | 0.338/?                          |
 | v21     | FasterRCNN[train]-color+geo aug-480p-SGD-90:10-e20,multi conf,new train loop,bs8                  | fasterrcnn_resnet50_fpn-e20.pt | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-train-color-geo-aug-480p-sgd-90-10-e20)    | 0.338/0.184                      |
-| v22     | fasterRCNN resnet50,90/10,e20,bs8,SGD,cnf0.15,i480,color aug **[inf imgSize2400]**                | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-train-coloraug-480p-sgd-90-10-e20/)      | 0.407/0.00 [problem in the code] |
-| v23     | fasterRCNN resnet50,90/10,e16,bs8,AdamW,cnf0.15,i480,color aug **[save_multy: future_resume]**    | fasterrcnn_resnet50_fpn-e7.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-train-coloraug-480p-sgd-adamw-90-10-e20) | 0.382/?                          |
-| v24     | fasterRCNN resnet50,90/10,e16,bs8,AdamW,**cnf0.1**,i480,color aug **[save_multy: future_resume]** | fasterrcnn_resnet50_fpn-e7.pt  | [NB](https://www.kaggle.com/shivamaranya/fasterrcnn-train-coloraug-480p-sgd-adamw-90-10-e20) | 0.382/?                          |
+| v22     | fasterRCNN resnet50,90/10,e20,bs8,SGD,cnf0.15,i480,color aug **[inf imgSize2400]**                | fasterrcnn_resnet50_fpn-e6.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-train-coloraug-480p-sgd-90-10-e20/)      | 0.407/0.00 [problem in the code] |
+| v23     | fasterRCNN resnet50,90/10,e16,bs8,AdamW,cnf0.15,i480,color aug **[save_multy: future_resume]**    | fasterrcnn_resnet50_fpn-e7.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-train-coloraug-480p-sgd-adamw-90-10-e20) | 0.382/?                          |
+| v24     | fasterRCNN resnet50,90/10,e16,bs8,AdamW,**cnf0.1**,i480,color aug **[save_multy: future_resume]** | fasterrcnn_resnet50_fpn-e7.pt  | [NB](https://www.kaggle.com/soumya9977/fasterrcnn-train-coloraug-480p-sgd-adamw-90-10-e20) | 0.382/?                          |
 |         |                                                                                                   |                                |                                                                                              |                                  |
 |         |                                                                                                   |                                |                                                                                              |                                  |
 ---
@@ -153,7 +153,7 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 | [Leon-V5 - v2](https://www.kaggle.com/soumya9977/leon-v5-infer-2-0-lb-0-665?scriptVersionId=87151602) | <mark style="background: #ABF7F7A6;">[no tracking, tta]</mark> Good Moon model <mark style="background: #FFB86CA6;">yolos6</mark>       | 0.4,0.28   | 6400                 | f2_sub.pt  | ?/0.665    |
 | [starfish-v13](https://www.kaggle.com/soumya9977/starfish-v3?scriptVersionId=87078723)                | <mark style="background: #ABF7F7A6;">[tracking,tta]</mark> 1/5 fold,<mark style="background: #FFB86CA6;">yolov5s5</mark> ,3000,e11,bs2 | 0.4,0.28   | 1920 x 3             | best.pt    | 0.76/0.588 |
 | [starfish-v12](https://www.kaggle.com/soumya9977/starfish-v3?scriptVersionId=87078723)                | <mark style="background: #ABF7F7A6;">[tracking,tta]</mark> 1/5 fold,<mark style="background: #FFB86CA6;">yolov5s5</mark> ,3000,e11,bs2 | 0.4,0.15   | 1920 x 3             | best.pt    | 0.76/0.580 |
-| [starfish-v07](https://www.kaggle.com/shivamaranya/yolov5-albumentations-train)|<mark style="background: #ABF7F7A6;">[tracking,tta]</mark> 1/5 fold,<mark style="background: #FFB86CA6;">yolov5s5</mark> ,3000,e11,bs2 | 0.4,0.28   | 1920 x 3 | best.pt    | 0.76/0.588                                                                                                                                         |            |                      |            |            |
+| [starfish-v07](https://www.kaggle.com/soumya9977/yolov5-albumentations-train)|<mark style="background: #ABF7F7A6;">[tracking,tta]</mark> 1/5 fold,<mark style="background: #FFB86CA6;">yolov5s5</mark> ,3000,e11,bs2 | 0.4,0.28   | 1920 x 3 | best.pt    | 0.76/0.588                                                                                                                                         |            |                      |            |            |
 ---
 </p>
 </details>
@@ -170,12 +170,12 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 |v5|yolov5s5:albu[frcnn],imgsize=3600,bs=2,e11,CONF= 0.28, IOU= 0.40| best.pt|?/0.552|
 |v7|yolov5s5:albu[frcnn],imgsize=3600,bs=2,e11,CONF= 0.28, IOU= 0.40 [SAME as ☝]| epoch6.pt|0.73871/0.552|
 |v8|yolov5s5:ammarnassanalhajali yolov5| best.pt|?/?|
-|v10|yolov5s5:[[BASE MODEL](https://www.kaggle.com/shivamaranya/yolov5-train1-base-model-1-of-5-folds?scriptVersionId=87048518)] imgsize=3600,bs=2,e11,CONF= 0.28, IOU= 0.40 | best.pt|0.76../0.588|
-|v12|yolov5s5:[[BASE MODEL](https://www.kaggle.com/shivamaranya/yolov5-train1-base-model-1-of-5-folds?scriptVersionId=87048518)] imgsize=3600,bs=2,e11,CONF= 0.15, IOU= 0.40 | best.pt|0.76../0.580|
-|v12|yolov5s5:[[BASE MODEL](https://www.kaggle.com/shivamaranya/yolov5-train1-base-model-1-of-5-folds?scriptVersionId=87048518)] imgsize=3600,bs=2,e11,CONF= 0.15, IOU= 0.40 | epoch7.pt|0.76../?|
+|v10|yolov5s5:[[BASE MODEL](https://www.kaggle.com/soumya9977/yolov5-train1-base-model-1-of-5-folds?scriptVersionId=87048518)] imgsize=3600,bs=2,e11,CONF= 0.28, IOU= 0.40 | best.pt|0.76../0.588|
+|v12|yolov5s5:[[BASE MODEL](https://www.kaggle.com/soumya9977/yolov5-train1-base-model-1-of-5-folds?scriptVersionId=87048518)] imgsize=3600,bs=2,e11,CONF= 0.15, IOU= 0.40 | best.pt|0.76../0.580|
+|v12|yolov5s5:[[BASE MODEL](https://www.kaggle.com/soumya9977/yolov5-train1-base-model-1-of-5-folds?scriptVersionId=87048518)] imgsize=3600,bs=2,e11,CONF= 0.15, IOU= 0.40 | epoch7.pt|0.76../?|
 |v15|yolov5s6:[Good Moon Model] CONF= 0.28, IOU= 0.40, img size = 1980x2 | f2_sub2.pt|0.76../?|
 |v16|yolov5s6:[Good Moon Model] CONF= 0.28, IOU= 0.40, img size = 6400 | f2_sub2.pt|0.76../?|
-|v16|yolov5s6:[[yolov5s6](https://www.kaggle.com/shivamaranya/yolov5s6-train1-base-model-1-of-5-folds)] imgsize=3600,bs=2,e11,CONF= 0.28, IOU= 0.40 | best.pt|0.81../?|
+|v16|yolov5s6:[[yolov5s6](https://www.kaggle.com/soumya9977/yolov5s6-train1-base-model-1-of-5-folds)] imgsize=3600,bs=2,e11,CONF= 0.28, IOU= 0.40 | best.pt|0.81../?|
 |v18|yolov5s6:[Good Moon Model] CONF= 0.30, IOU= 0.50, img size = 6400 | f2_sub2.pt|0.76../?|
 |v21|yolov5s6: Vid based split, vid:2, CONF= 0.30, IOU= 0.50, inf img size = 6400, train 3584, 6th epoch | best f2 epoch|0.89/0.620|
 |v23|yolov5s6: Vid based split, vid:1, CONF= 0.30, IOU= 0.50, inf img size = 6400, train 3584, 7th epoch | best f2 epoch|0.72/0.610|
