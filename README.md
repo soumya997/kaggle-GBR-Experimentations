@@ -38,6 +38,25 @@ we had to shift our focus toward that. We got started with the competiion after 
       H(norfair Tracking)-->final
 ```
 
+
+### IMP NBs:
+---
+- [yolov5 Ensembling NMS-Soft_NMS-NMW-WBFLB 8cce28](inference-NBs/yolov5-ensembling-nms-soft-nms-nmw-wbf-lb-8cce28.ipynb)
+- [figuring out aug [Norm values]](post-processing/figuring-out-aug-norm-values.ipynb) [`private-kaggle`](https://www.kaggle.com/soumya9977/figuring-out-aug-norm-values)
+- [Learning to Sea: Underwater img Enhancement + EDA](post-processing/learning-to-sea-underwater-img-enhancement-eda.ipynb) [**`public-kaggle`**](https://www.kaggle.com/soumya9977/learning-to-sea-underwater-img-enhancement-eda)
+- [somu: Evaluate F2 for YoloV5 and Norfair tracking](metric-calculation/somu-evaluate-f2-for-yolov5-and-norfair-tracking.ipynb)
+- [competition metric implementation](metric-calculation/competition-metric-implementation.ipynb)
+- [competition metric implementation clone, w/ some fix: reef-model-cv-check](tf-reef_experiment_compilation/metric-calculation/reef-model-cv-check.ipynb) 
+- [f2 calculation for FasterRCNN](metric-calculation/fasterRCNN-f2-eval.py)
+<!-- - [yolov5+yolox+ensemble+tracking](inference-NBs/yolov5-yolox-ensemble-tracking-f1cd34.ipynb) -->
+
+### YOLO Inference NBs:
+---
+- [StarFish-V3 [yolov5 ensemble + tracking]](inference-NBs/starfish-v3-yolov5-ensemble-tracking.ipynb) 
+- [StarFish-V3 [yolov5 + tracking]](inference-NBs/starfish-v3-yolov5-tracking.ipynb)
+- [yolov5 inference | Leon-V5-infer 2.0](inference-NBs/leon-v5-infer-2-0-lb-0-665.ipynb)
+
+
 # NB tracking
 
 |training NB|Inference NB|
@@ -69,23 +88,6 @@ we had to shift our focus toward that. We got started with the competiion after 
 |[FasterRCNN:resnet50,90/10,e12,bs8,SGD,cnf0.15,i480](training/fasterrcnn-resnet50-90-10-e12-bs8-sgd-cnf0-15-i480.ipynb)||
 |[FasterRCNN[train]-geoaug-480p-SGD-90:10](training/fasterrcnn-train-geoaug-480p-sgd-90-10.ipynb)||
 
-
-### IMP NBs:
----
-- [yolov5 Ensembling NMS-Soft_NMS-NMW-WBFLB 8cce28](inference-NBs/yolov5-ensembling-nms-soft-nms-nmw-wbf-lb-8cce28.ipynb)
-- [figuring out aug [Norm values]](post-processing/figuring-out-aug-norm-values.ipynb) [`private-kaggle`](https://www.kaggle.com/soumya9977/figuring-out-aug-norm-values)
-- [Learning to Sea: Underwater img Enhancement + EDA](post-processing/learning-to-sea-underwater-img-enhancement-eda.ipynb) [**`public-kaggle`**](https://www.kaggle.com/soumya9977/learning-to-sea-underwater-img-enhancement-eda)
-- [somu: Evaluate F2 for YoloV5 and Norfair tracking](metric-calculation/somu-evaluate-f2-for-yolov5-and-norfair-tracking.ipynb)
-- [competition metric implementation](metric-calculation/competition-metric-implementation.ipynb)
-- [competition metric implementation clone, w/ some fix: reef-model-cv-check](tf-reef_experiment_compilation/metric-calculation/reef-model-cv-check.ipynb) 
-- [f2 calculation for FasterRCNN](metric-calculation/fasterRCNN-f2-eval.py)
-<!-- - [yolov5+yolox+ensemble+tracking](inference-NBs/yolov5-yolox-ensemble-tracking-f1cd34.ipynb) -->
-
-### YOLO Inference NBs:
----
-- [StarFish-V3 [yolov5 ensemble + tracking]](inference-NBs/starfish-v3-yolov5-ensemble-tracking.ipynb) 
-- [StarFish-V3 [yolov5 + tracking]](inference-NBs/starfish-v3-yolov5-tracking.ipynb)
-- [yolov5 inference | Leon-V5-infer 2.0](inference-NBs/leon-v5-infer-2-0-lb-0-665.ipynb)
 
 
 
