@@ -17,9 +17,7 @@ we had to shift our focus toward that. We got started with the competiion after 
 
 https://user-images.githubusercontent.com/54326088/157086369-3fbae885-5b0b-4e3c-8378-59285b096eb9.mp4
 
-
-
-media/img_pred_seq45015.mp4
+See more [here](./media/)
 
 ## Few Ideas That We tried:
 - Most of the ideas were proposed on the Discussion forums
