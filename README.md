@@ -26,10 +26,13 @@ we had to shift our focus toward that. We got started with the competiion after 
       A(Competition Data)--> B(video split vid_0);
       A(Competition Data)--> C(video split vid_1);
       A(Competition Data)--> D(video split vid_2);
-      B(video split vid_0)-->E(yolov5s6 and TTA w/ inf imgsize-6200);
-      C(video split vid_1)-->E(yolov5s6 and TTA w/ inf imgsize-6200);
-      D(video split vid_2)-->E(yolov5s6 and TTA w/ inf imgsize-6200);
-      E(yolov5s6 and TTA w/ inf imgsize-6200)--Demo= conf:0.30, thr:0.50, img:6400--> G(WBF);
+      B(video split vid_0)-->E(Train yolov5s6 img-3584);
+      C(video split vid_1)-->M(Train yolov5s6 img-3584);
+      D(video split vid_2)-->N(Train yolov5s6 img-3584);
+      E(Train yolov5s6 img-3584)--> K(TTA w/ inf imgsize-6200);
+      M(Train yolov5s6 img-3584)--> K(TTA w/ inf imgsize-6200);
+      N(Train yolov5s6 img-3584)--> K(TTA w/ inf imgsize-6200);
+      K(TTA w/ inf imgsize-6200)--eg conf:0.30, thr:0.50--> G(WBF);
       G(WBF)--> F(Classification);
       F(Classification)--> H(norfair Tracking);
       H(norfair Tracking)-->final
