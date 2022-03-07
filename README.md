@@ -21,7 +21,7 @@ See more [here](./media/)
 
 ## Few Ideas That We tried:
 - Most of the ideas were proposed on the Discussion forums
-### Use Single yolov5:
+<!-- ### Use Single yolov5: -->
 - When I got to yolov5 it was clear that yolov5 is FTW. But there were conflits on which version to use yolov5s6 or yolov5m6. Because some were getting better results on one of them. 
    - I first started with 2 stage detector FasterRCNN, I tried different backbones and hyper-params with different augmentation techniques[geometric and colog and combined]. I tried ResNet101,ResNet50,MobileNet,EfficientB3,SwinTransformer. Check out this amazing repository by [@mrinath](https://github.com/mrinath123), it helped for efficient with timm [timmFasterRcnn](https://github.com/mrinath123/timmFasterRcnn/).
 
