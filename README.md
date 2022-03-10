@@ -25,12 +25,13 @@ See more [here](./media/)
 - When I got to yolov5 it was clear that yolov5 is FTW. But there were conflits on which version to use yolov5s6 or yolov5m6. Because some were getting better results on one of them. 
    - I first started with 2 stage detector FasterRCNN, I tried different backbones and hyper-params with different augmentation techniques[geometric and colog and combined]. I tried ResNet101,ResNet50,MobileNet,EfficientB3,SwinTransformer. Check out this amazing repository by [@mrinath](https://github.com/mrinath123), it helped for efficient with timm [timmFasterRcnn](https://github.com/mrinath123/timmFasterRcnn/).
 
-   -  **I started with 3fold yolov5s6** It was a video based splitting. As per my analysis it was most likely that video_id2 would give more better f2, because it has more data, and there were varience in the data. I tried different hyper parameters in that, and different training image resolutions. I tried doing ensemble after training each fold. I did the same with yolov5m6. I found out Adam was working better SGD. I also did some experiments with custom augmentation using albumentations. 
+   -  **I started with 3fold yolov5s6** It was a video based splitting. I was using this [repository](https://github.com/soumya997/yolov5-w-f2-mod) minor changes over the ultralytics yolov5 to track the f2 score. As per my analysis it was most likely that video_id2 would give more better f2, because it has more data, and there were varience in the data. I tried different hyper parameters in that, and different training image resolutions. I tried doing ensemble after training each fold. I did the same with yolov5m6. I found out Adam was working better SGD. I also did some experiments with custom augmentation using albumentations. 
     
    -  After seeing some discussion on yolov5 model freesing, I thought of trying that, and for this best splitting was sequence based groupfold. for more check out [ultralytics docs](https://docs.ultralytics.com/tutorials/transfer-learning-froze-layers/). I trained both yolov5s6 and yolov5m6. image size was +/-3000.
     
    - Along with yolov5, tracking was doing a better job increasing the CV/LB. I also tried that. I used norfair tracking. I saw some discussions on different tracking to use, like deep sort and so, but ended up using the norfair one as it was giving decent results and I did not had much time.
-   - As a postprocessing technique I also tried to use classification on the bounding boxes. It also helped. I tried different models Normal CNN, Densenet121, Resnet [50,101], Efficientnet[B3] and ensemble. Our demo pipeline looks like this,
+   
+   - As a postprocessing technique I also tried to use classification on the bounding boxes. It also helped. I tried different models Normal CNN, Densenet121, Resnet [50,101], Efficientnet[B3] and ensemble. I used [this](https://www.kaggle.com/vgarshin/ensemble-boxes-104) code for doing the ensemble, it is also added that in this repo. Our demo pipeline looks like this,
    
 ```mermaid
   graph TD;

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ensemble-boxes
+Version: 1.0.4
+Summary: Python implementation of several methods for ensembling boxes from object detection models: Non-maximum Suppression (NMS), Soft-NMS, Non-maximum weighted (NMW), Weighted boxes fusion (WBF)
+Home-page: https://github.com/ZFTurbo/Weighted-Boxes-Fusion
+Author: Roman Solovyev (ZFTurbo)
+Author-email: UNKNOWN
+License: MIT License
+Description: Python implementation of several methods for ensembling boxes from object detection models: Non-maximum Suppression (NMS), Soft-NMS, Non-maximum weighted (NMW), Weighted boxes fusion (WBF)More details: https://github.com/ZFTurbo/Weighted-Boxes-Fusion
+Platform: UNKNOWN
