@@ -229,3 +229,10 @@ resnet50,90/10,e12,bs8,SGD,lr_sch,conf:0.15,480p,labeled data, No augmentation
 - dont participate on multiple comps w/ overlapping timings [one at a time]
 - Try to explore more fields [NLP,audio,tabular]
 - use better ways to track [use WandB/google sheet]
+- In the middle of the competition, when a LB score boosting trick[increasing image size to 3x,4x ..10x] got shared, that changed the momentum of the competition. The competition suddenly turned into a GPU war. PPl who had more resources and compute were getting high LB scores. This thing really effected me bcoz I did not had any good compute except kaggle and colab. I was feeling like giving up. But though that I learned two life lession, which are,
+   - keep patience
+   - either you go all the way or you dont go anywhere.
+
+
+After ward I understood that, anyone can achieve anything if they has the patience of keep working irrespective of the outcome. And for the 2nd point, I guess I developed it in myself that if you stop a process in the middle, it will give you nothing but regret, because you started with a motivation, right? I used to see the posters that I wrote over the competition time, used to see the timelines that I made involving differnet experimentation ideas, the progress I had made, these thing motivated me to keep on going all the way. So my advice will be to create some posters/TODOs/learning blogs while in the process of doing it, this will keep you motivated through out the journey and when you feel like giving up see those poster/blogs, and ask yourself, if I had to give up after coming that far, then why I even started doing it, those blogs/posters will give you the reason behind of your starting.   
+    
