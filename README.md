@@ -53,9 +53,12 @@ See more [here](./media/)
 
 ### IMP NBs:
 ---
+
+- ### [Learning to Sea: Underwater img Enhancement + EDA](post-processing/learning-to-sea-underwater-img-enhancement-eda.ipynb) [**`public-kaggle`**](https://www.kaggle.com/soumya9977/learning-to-sea-underwater-img-enhancement-eda) [200+ Upvotes]
+
+
 - [yolov5 Ensembling NMS-Soft_NMS-NMW-WBFLB 8cce28](inference-NBs/yolov5-ensembling-nms-soft-nms-nmw-wbf-lb-8cce28.ipynb)
 - [figuring out aug [Norm values]](post-processing/figuring-out-aug-norm-values.ipynb) [`private-kaggle`](https://www.kaggle.com/soumya9977/figuring-out-aug-norm-values)
-- [Learning to Sea: Underwater img Enhancement + EDA](post-processing/learning-to-sea-underwater-img-enhancement-eda.ipynb) [**`public-kaggle`**](https://www.kaggle.com/soumya9977/learning-to-sea-underwater-img-enhancement-eda) [200+ Upvotes]
 - [somu: Evaluate F2 for YoloV5 and Norfair tracking](metric-calculation/somu-evaluate-f2-for-yolov5-and-norfair-tracking.ipynb)
 - [competition metric implementation](metric-calculation/competition-metric-implementation.ipynb)
 - [competition metric implementation clone, w/ some fix: reef-model-cv-check](tf-reef_experiment_compilation/metric-calculation/reef-model-cv-check.ipynb) 
