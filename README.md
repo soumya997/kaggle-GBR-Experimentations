@@ -54,7 +54,7 @@ See more [here](./media/)
 ### IMP NBs:
 ---
 
-- ### [Learning to Sea: Underwater img Enhancement + EDA](post-processing/learning-to-sea-underwater-img-enhancement-eda.ipynb) [**`public-kaggle`**](https://www.kaggle.com/soumya9977/learning-to-sea-underwater-img-enhancement-eda) [200+ Upvotes]
+- ### [`Learning to Sea: Underwater img Enhancement + EDA`](post-processing/learning-to-sea-underwater-img-enhancement-eda.ipynb) [**`public-kaggle`**](https://www.kaggle.com/soumya9977/learning-to-sea-underwater-img-enhancement-eda) [200+ Upvotes]
 
 
 - [yolov5 Ensembling NMS-Soft_NMS-NMW-WBFLB 8cce28](inference-NBs/yolov5-ensembling-nms-soft-nms-nmw-wbf-lb-8cce28.ipynb)
